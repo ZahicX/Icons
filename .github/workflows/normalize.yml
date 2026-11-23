@@ -52,3 +52,11 @@ jobs:
           git add -A
           git commit -m "chore: normalize icons to 256x256 + rebuild icon set [skip ci]"
           git push
+
+      - name: Purge jsDelivr cache
+        run: |
+          git diff-tree --no-commit-id --name-only -r HEAD \
+            | grep -E '^(icons/|iconset(-raw)?\.json$)' \
+            | while read -r f; do
+                curl -sS --max-time 30 "https://purge.jsdelivr.net/gh/ZahicX/Icons@main/$f" >/dev/null || true
+              done

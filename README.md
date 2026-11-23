@@ -34,6 +34,8 @@ https://raw.githubusercontent.com/ZahicX/Icons/main/icons/<名称>.png
 3. 重新生成 `iconset.json`、`iconset-raw.json` 与下方图标表
 
 > 说明：jpg 缩放时需要重新编码（质量 95）；png 为完全无损优化。svg/gif/ico 不会自动缩放。
+>
+> 提示：jsDelivr 对 `@main` 引用有最长 12 小时缓存。工作流会在提交后自动清理 CDN 缓存，通常 1–2 分钟生效；如仍未更新，可打开 `https://purge.jsdelivr.net/gh/ZahicX/Icons@main/iconset.json` 手动刷新，或改用上面的 raw 链接。
 
 ## 图标列表
 
