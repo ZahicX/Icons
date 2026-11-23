@@ -1,0 +1,48 @@
+name: Normalize icons
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "icons/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: normalize-icons
+  cancel-in-progress: false
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install oxipng
+        run: |
+          curl -sSfL -o /tmp/oxipng.tar.gz \
+            https://github.com/shssoichiro/oxipng/releases/download/v10.2.1/oxipng-10.2.1-x86_64-unknown-linux-musl.tar.gz
+          tar -xzf /tmp/oxipng.tar.gz -C /tmp
+          install -m 755 /tmp/oxipng-10.2.1-x86_64-unknown-linux-musl/oxipng /usr/local/bin/oxipng
+          oxipng --version
+
+      - name: Normalize icons to 256x256
+        run: bash scripts/normalize.sh
+
+      - name: Regenerate icon set
+        run: python3 scripts/build_iconset.py
+
+      - name: Commit changes
+        run: |
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "Nothing changed, skipping commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: normalize icons to 256x256 + rebuild icon set [skip ci]"
+          git push
