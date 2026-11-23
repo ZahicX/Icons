@@ -1,0 +1,41 @@
+{
+  "name": "Icons",
+  "icons": [
+    {
+      "name": "189cloud",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/189cloud.png"
+    },
+    {
+      "name": "Agent_Checkin_3in1",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/Agent_Checkin_3in1.png"
+    },
+    {
+      "name": "kugou",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/kugou.png"
+    },
+    {
+      "name": "kugou_youth",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/kugou_youth.png"
+    },
+    {
+      "name": "laifen",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/laifen.png"
+    },
+    {
+      "name": "sgcc",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/sgcc.png"
+    },
+    {
+      "name": "xmly",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/xmly.png"
+    },
+    {
+      "name": "xmlyjs",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/xmlyjs.png"
+    },
+    {
+      "name": "zeeho",
+      "url": "https://raw.githubusercontent.com/ZahicX/Icons/main/icons/zeeho.png"
+    }
+  ]
+}
