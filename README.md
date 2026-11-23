@@ -46,6 +46,7 @@ https://raw.githubusercontent.com/ZahicX/Icons/main/icons/<名称>.png
 | ![kugou_youth](icons/kugou_youth.png) | `kugou_youth` | https://cdn.jsdelivr.net/gh/ZahicX/Icons@main/icons/kugou_youth.png | https://raw.githubusercontent.com/ZahicX/Icons/main/icons/kugou_youth.png |
 | ![laifen](icons/laifen.png) | `laifen` | https://cdn.jsdelivr.net/gh/ZahicX/Icons@main/icons/laifen.png | https://raw.githubusercontent.com/ZahicX/Icons/main/icons/laifen.png |
 | ![sgcc](icons/sgcc.png) | `sgcc` | https://cdn.jsdelivr.net/gh/ZahicX/Icons@main/icons/sgcc.png | https://raw.githubusercontent.com/ZahicX/Icons/main/icons/sgcc.png |
+| ![Tailscale](icons/Tailscale.png) | `Tailscale` | https://cdn.jsdelivr.net/gh/ZahicX/Icons@main/icons/Tailscale.png | https://raw.githubusercontent.com/ZahicX/Icons/main/icons/Tailscale.png |
 | ![xmly](icons/xmly.png) | `xmly` | https://cdn.jsdelivr.net/gh/ZahicX/Icons@main/icons/xmly.png | https://raw.githubusercontent.com/ZahicX/Icons/main/icons/xmly.png |
 | ![xmlyjs](icons/xmlyjs.png) | `xmlyjs` | https://cdn.jsdelivr.net/gh/ZahicX/Icons@main/icons/xmlyjs.png | https://raw.githubusercontent.com/ZahicX/Icons/main/icons/xmlyjs.png |
 | ![zeeho](icons/zeeho.png) | `zeeho` | https://cdn.jsdelivr.net/gh/ZahicX/Icons@main/icons/zeeho.png | https://raw.githubusercontent.com/ZahicX/Icons/main/icons/zeeho.png |
